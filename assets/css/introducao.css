@@ -1,0 +1,138 @@
+.circle{
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     background-color: #384937;
+     clip-path: circle(50% at 90% 120%);
+     z-index: -1;
+}
+
+.introducao-content{
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     gap: 1rem;
+     margin-top: 8rem;
+}
+
+.content{
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     gap: 1rem;
+     width: 100%;
+     max-width: 600px;
+}
+
+.img-introducao-apple img{
+     width: 100%;
+     max-width: 200px;
+}
+
+.content h1{
+     font-weight: bold;
+     font-size: 2rem;
+}
+
+.preco-p{
+     color: #181a23a8;
+}
+
+.btn-introsucao{
+     width: 190px;
+     padding: .6rem 3rem;
+     border: none;
+     background-color: #181A23;
+     color: #DED9D5;
+     cursor: pointer;
+}
+
+.btn-introsucao:hover{
+     opacity: .9;
+}
+
+.cores{
+     display: flex;
+     align-items: center;
+     gap: 10px;
+}
+
+.cores span{
+     cursor: pointer;
+     width: 40px;
+     height: 40px;
+     border-radius: 50%;
+     box-shadow: 1px 1px rgba(0, 0, 0, 0.35);
+}
+
+.cores span:nth-child(1){
+     background-color: #384937;
+}
+.cores span:nth-child(2){
+     background-color: #E0C7BE;
+}
+.cores span:nth-child(3){
+     background-color: #1A5172;
+}
+.cores span:nth-child(4){
+     background-color: #181A23;
+}
+.cores span:nth-child(5){
+     background-color: #DED9D5;
+}
+.cores span:nth-child(6){
+     background-color: #A71413;
+}
+
+.iphones{
+     width: 400px;
+}
+
+.iphones img{
+     width: 100%;
+     transform: rotate(-10deg);
+}
+
+@media screen and (max-width: 1281px) {
+     .circle{
+          clip-path: circle(50% at 100% 100%);
+     }
+
+     .introducao-content{
+          gap: 2rem;
+     }
+}
+
+@media screen and (max-width: 954px) {
+     .circle{
+          clip-path: circle(40% at 100% 10%);
+     }
+
+     .introducao-content{
+          gap: 2rem;
+     }
+}
+
+@media screen and (max-width: 600px) {
+     .circle{
+          height: 108%;
+          clip-path: circle(40% at 80% 90%);
+
+     }
+
+     .introducao-content{
+          margin-top: 6rem;
+     }
+
+     .introducao-content{
+          flex-direction: column;
+          gap: 2rem;
+     }
+
+     .iphones{
+          margin-top: 1.5rem;
+          width: 200px;
+     }
+}
